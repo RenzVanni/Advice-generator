@@ -1,0 +1,57 @@
+main {
+  position: relative;
+  background-color: var(--neutral-c2);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  margin: 30% auto;
+  text-align: center;
+  min-width: 342px;
+
+  @media (min-width: 375px) {
+    max-width: 40%;
+    margin: 12% auto;
+  }
+
+  .line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    hr {
+      color: var(--neutral-c1);
+      width: 100%;
+    }
+
+    .vertical {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      
+      .ver1, .ver2 {
+        background-color: var(--primary-c1);
+        border-radius: 1rem;
+        padding: .5rem .2rem;
+      }
+    }
+  }
+
+  
+  .dice {
+    background-color: var(--primary-c2);
+    border-radius: 100%;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    top: 94%;
+    left: 39%;
+
+    @media (min-width: 375px) {
+      top: 90%;
+      left: 44%;
+    }
+  }
+  .dice:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px var(--primary-c2);
+  }
+}

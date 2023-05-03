@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700;800&display=swap");
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--neutral-c3);
+  color: var(--primary-c1);
+  margin: 0;
+  padding: 0;
+  font-size: 1.75rem;
+  font-family: "Manrope", sans-serif;
+  padding: 1rem;
+}
+
+:root {
+  --primary-c1: hsl(193, 38%, 86%);
+  --primary-c2: hsl(150, 100%, 66%);
+  --neutral-c1: hsl(217, 19%, 38%);
+  --neutral-c2: hsl(217, 19%, 24%);
+  --neutral-c3: hsl(218, 23%, 16%);
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 1.5rem;
+}
+
+p {
+  color: var(--primary-c2);
+  font-size: 0.8rem;
+  margin: 0 0 1.5rem;
+}
+
+main {
+  position: relative;
+  background-color: var(--neutral-c2);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  margin: 30% auto;
+  text-align: center;
+  min-width: 342px;
+}
+@media (min-width: 375px) {
+  main {
+    max-width: 40%;
+    margin: 12% auto;
+  }
+}
+main .line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+main .line hr {
+  color: var(--neutral-c1);
+  width: 100%;
+}
+main .line .vertical {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .line .vertical .ver1, main .line .vertical .ver2 {
+  background-color: var(--primary-c1);
+  border-radius: 1rem;
+  padding: 0.5rem 0.2rem;
+}
+main .dice {
+  background-color: var(--primary-c2);
+  border-radius: 100%;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  top: 94%;
+  left: 39%;
+}
+@media (min-width: 375px) {
+  main .dice {
+    top: 90%;
+    left: 44%;
+  }
+}
+main .dice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px var(--primary-c2);
+}/*# sourceMappingURL=styles.css.map */
